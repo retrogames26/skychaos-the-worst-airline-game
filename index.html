@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0c1424" />
+  <title>Sky Chaos — Worst Airline Simulator</title>
+</head>
+<body>
+  <div id="game-root">
+    <div id="topbar"><div class="brand-mark">✈</div><div><div class="brand">SKY CHAOS</div><div class="subbrand">THE WORLD'S MOST QUESTIONABLE AIRLINE</div></div><div class="flight-pill"><span class="live-dot"></span> FLIGHT SC-204</div></div>
+    <div id="hud"><div class="stat"><span class="stat-label">ALTITUDE</span><strong id="altitude">8,500 ft</strong></div><div class="stat"><span class="stat-label">CABIN MOOD</span><strong id="mood">Mostly nervous</strong></div><div class="stat"><span class="stat-label">CASH EARNED</span><strong id="cash">$0</strong></div></div>
+    <div id="crosshair">＋</div>
+    <div id="center-message" class="hidden"></div>
+    <div id="objective"><div class="eyebrow">CURRENT DUTY</div><div id="objective-title">Make the cabin slightly less terrible</div><div id="objective-desc">Find the passenger with the food request and deliver a meal.</div><div class="progress-track"><div id="progress-fill"></div></div><div id="progress-label">0 / 3 duties complete</div></div>
+    <div id="prompt" class="hidden">E — Interact</div>
+    <div id="event-banner" class="hidden"></div>
+    <div id="controls-hint"><kbd>W A S D</kbd> MOVE <kbd>MOUSE</kbd> LOOK <kbd>E</kbd> INTERACT <kbd>ESC</kbd> RELEASE</div>
+    <div id="start-screen"><div class="start-card"><div class="hero-tag">CO-OP CHAOS PROTOTYPE · BUILD 0.1</div><h1>FLY HIGH.<br><span>FAIL HIGHER.</span></h1><p>Your airline is underfunded, your passengers are overconfident, and something is already making a weird noise. Do your cabin duties and try to land in one piece.</p><div class="mission-list"><div><span>01</span> Serve the passenger</div><div><span>02</span> Secure the loose luggage</div><div><span>03</span> Inspect the suspicious engine panel</div></div><button id="start-button">BOARD THE PLANE <span>→</span></button><div class="small-note">Desktop recommended · WASD + mouse · Prototype uses original procedural 3D geometry</div></div></div>
+    <div id="result-screen" class="hidden"><div class="result-card"><div class="hero-tag">FLIGHT REPORT</div><h2>YOU SURVIVED.<br><span>BARELY.</span></h2><p id="result-copy">You completed the cabin duties.</p><div class="result-total" id="result-total">$300</div><div class="result-caption">FLIGHT BONUS</div><button id="restart-button">FLY ANOTHER DISASTER ↻</button></div></div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
